@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <title>Document</title>    
+</head>
+ <body>
+    <h1>Studying JQuery Library</h1>
+    <ul></ul>
+    <button>Create li</button>
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                var new_li = document.createElement('li');
+                new_li.textContent = 'How are you';
+                $('ul')
+                      .append(new_li)
+                      .css("color","green");
+            });
+        });
+    </script>
+</body>
+</html>
